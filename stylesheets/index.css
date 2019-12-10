@@ -1,0 +1,154 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #fff;
+    font-family: Raleway, sans-serif;
+}
+
+
+/************* Hovedinnholdet *************/
+.background {
+    min-height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.p1 {
+    background-image: url(../img/forside-gammel-dame.jpg);
+}
+
+.p2 {
+    background-image: url(../img/politikk-eldre.jpg);
+}
+
+.p3 {
+    background-image: url(../img/forside-p3.jpeg);
+}
+
+
+.tekst {
+    display: grid;
+    grid-template-columns: minmax(1.5rem, 1fr) minmax(0, 40rem) minmax(1.5rem, 1fr);
+    padding: 4rem 0;
+    min-height: 30vh;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.tekst h2 {
+    color: #1780e8;
+    padding: 2rem 0 0.5rem 0;
+}
+
+.tekst p {
+    padding: 1rem 0;
+}
+
+.tekst > * {
+    grid-column: 2/ -2;
+}
+
+.overskrift {
+    align-self: center;
+    color: #fff;
+    text-shadow: 0.05rem 0.05rem #000;
+    font-size: 3rem;
+}
+
+/* Levekår, samfunn, samferdsel grid */
+.innholdsgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    min-width: 100vw;
+    padding: 2rem;
+}
+
+.innholdsgrid h3 {
+    font-size: 1.6rem;
+    color: #1780e8;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 2rem;
+}
+
+.innholdsgrid p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+.innholdsgrid img {
+    height: auto;
+    max-width: 100%;
+}
+
+.innholdsgrid a {
+    text-decoration: none;
+}
+
+
+/* Aktuelt */
+.aktuelt1 {
+    background-image: url(../img/aktuelt-p1.jpeg) ;
+}
+
+/* Partiprogram */ 
+.partiprogram1 {
+    background-image: url(../img/parti-p1.jpeg);
+}
+
+#video-pensjonistpartiet {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-pensjonistpartiet video {
+    width: 560px;
+    height: 315px;
+}
+
+.pp {
+    color: #1780e8; 
+}
+
+
+/* Politikk */
+.politikk1 {
+    background-image: url(../img/politikk-p1.jpeg);
+}
+
+/* Knapper på siden */
+button {
+    background-color: white;
+    color: #1780e8;
+    border: 0.1rem solid #1780e8;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+/* Når du holder over knappen */
+button:hover {
+    background-color: #1780e8;
+    color: white;
+}

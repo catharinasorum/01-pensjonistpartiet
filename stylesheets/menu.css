@@ -1,0 +1,50 @@
+header {
+    background-color: #1780e8;
+    left: 0;
+    top: 0;
+    min-width: 100vw;
+    min-height: 9rem;
+    padding: 2rem 1rem;
+}
+
+header img {
+    height: 100%;
+    width: 100%;
+}
+
+#menu {
+    display: grid;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#menu a {
+    font-family: Raleway, sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 1.8rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+#menu a:hover {
+    font-weight: 780;
+    transition: 0.5s;
+}
+
+
+@media only screen and (min-width: 800px) {
+    header {
+      max-height: 30rem;
+      display: flex;
+    }
+
+    #menu {
+        align-items: center;
+        height: 25vh;
+    }
+  }
